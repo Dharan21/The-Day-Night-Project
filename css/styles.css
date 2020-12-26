@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Averia Sans Libre, Fantasy;
     background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);
 }
 
@@ -14,6 +13,29 @@ body {
     width: 100vw;
     position: relative;
     overflow: hidden;
+}
+
+.morning-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff);
+}
+
+.afternoon-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #FF4500, #FF8C00, transparent);
+    opacity: 0;
+}
+
+.evening-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,#0000FF, #0000FF, #87CEFA, transparent);
+    opacity: 0;
 }
 
 #cloud-container {
@@ -58,7 +80,7 @@ body {
 
 #sea {
     z-index: 3;
-    top: 50%;
+    top: 60%;
     width: 100vw;
     height: 50vh;
     background: transparent;
@@ -105,10 +127,23 @@ body {
     }
 }
 
+#sun-container {
+    position: relative;
+    height: 60%;
+    width: 50%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+}
+
 #sun {
-    z-index: 2;
+    cursor: move;
+    top:0;
+    left:0;
+    position: absolute;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: #f9cb5d;
+    box-shadow: 0 0 250px 200px #f9cb5d;
 }

@@ -10,7 +10,12 @@
 
 <body>
     <div class="container">
-        <div id="sun"></div>
+        <div class="morning-back"></div>
+        <div class="afternoon-back"></div>
+        <div class="evening-back"></div>
+        <div id="sun-container">
+            <div id="sun"></div>
+        </div>
         <div id="cloud-container"></div>
         <div id="sea">
             <div class="wave-1"></div>
@@ -25,6 +30,10 @@
         $(() => {
             addClouds(5);
             startCloudFloating();
+            setMorningScene();
+            // setAfternoonScene();
+            // setEveningScene();
+            enableDrag($('#sun'));
         });
     </script>
 </body>
