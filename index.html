@@ -16,6 +16,7 @@
       <div class="morning-back"></div>
       <div class="afternoon-back"></div>
       <div class="evening-back"></div>
+      <div class="night-back"></div>
       <div id="sun-container">
         <div id="sun"></div>
       </div>
@@ -40,6 +41,7 @@
         // setAfternoonScene();
         // setEveningScene();
         enableDrag($("#sun"));
+        $('#sun').on('click', toggleDayNight);
       });
     </script>
   </body>
